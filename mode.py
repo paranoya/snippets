@@ -133,7 +133,7 @@ print(f'{N_normal}/{N} "normal" values (threshold = {threshold:.3f}; contaminati
 
 # %% Plot figure
 
-plt.ion()
+# plt.ion()
 fig, ax = plt.subplots()
 ax.set_title('{} - {} points'.format(distribution, N))
 ax.set_xlabel('x')
