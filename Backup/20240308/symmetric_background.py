@@ -9,7 +9,6 @@ Created on March 2, 2022
 
 from __future__ import print_function, division
 
-import pylab as pl
 from matplotlib import pyplot as plt
 import numpy as np
 from astropy.io import fits
@@ -96,7 +95,7 @@ if __name__ == "__main__":
     cumulative_noise_area = np.cumsum(sorted_noise_area)
 
     # %% Plot result ------------------------------
-    plt.ion()
+    #plt.ion()
 
     '''
     plt.figure()
@@ -120,7 +119,7 @@ if __name__ == "__main__":
     plt.axvline(x_signal, c='k', ls='--')
 
     plt.xlabel('x')
-    pl.xlim(3*x0-3*x_signal, 5*x_signal-x0)
+    plt.xlim(3*x0-3*x_signal, 5*x_signal-x0)
     plt.ylabel('Mass above')
     plt.yscale('log')
     plt.legend()
